@@ -12,3 +12,42 @@ transform: rotate(5deg);
 
 transform: scaleY(1.5);
 }
+
+nav>a {
+
+transform: rotate(5deg);
+}
+
+main h1 {
+    
+    transform: rotate(5deg);
+}
+
+h3+iframe {
+
+    transform: rotate(5deg);
+}
+
+a:link {
+
+font-size: 3rem;
+background-color: green;
+}
+
+#about:visited {
+
+font-size: 3rem;
+color:brown;
+background-color: white;
+}
+
+#advan:active {
+
+    font-size: 3rem;
+    color: yellow;
+}
+
+#advan:hover {
+
+    color: red;
+}
