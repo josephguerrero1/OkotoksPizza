@@ -55,3 +55,45 @@ background-color: white;
 #links {
     display: grid;
 }
+
+@keyframes color-change {
+    25% {color: blue; background-color: lightsalmon;}
+    50% {color: green; background-color: lightsalmon;}
+    75% {color: yellow; background-color: lightsalmon;}
+    100% {color: red; background-color: lightsalmon;}
+}
+
+@keyframes size-change {
+    from {font-size: 0px; background-color: lightsalmon;}
+    to {font-size: 100px; background-color: lightsalmon;}
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg); background-color: lightsalmon;}
+    to {transform:rotate(360deg); background-color: lightsalmon;}
+}
+
+#color-change:hover {
+    animation-name: color-change;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#size-change:active {
+    animation-name: size-change;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#spin:hover {
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#spin {
+    width: 65.1px;
+}
