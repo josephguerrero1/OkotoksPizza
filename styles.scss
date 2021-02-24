@@ -1,0 +1,383 @@
+/* iPhone 5 width 320px */
+
+@import '_about.scss';
+
+@mixin shrink() {
+    width: 25vw;
+}
+
+$background-color: green;
+
+#pizzavideo {
+    transform: skewY(20deg);
+    width: 95vw;
+}
+
+#pizzachef {
+    width: 90vw;
+}
+
+img {
+    transform: rotate(5deg);
+}
+
+#pizzastore {
+    width: 90vw;
+    margin-left: 10px;
+}
+
+nav>a {
+    transform: rotate(5deg);
+}
+
+main h1 {
+    transform: rotate(5deg);
+}
+
+h3+iframe {
+    transform: rotate(5deg);
+}
+
+a:link {
+    font-size: 3rem;
+    background-color: $background-color;
+}
+
+#about:visited {
+    font-size: 3rem;
+    color:brown;
+    background-color: white;
+}
+
+#advan:active {
+    font-size: 3rem;
+    color: yellow;
+}
+
+#advan:hover {
+    color: red;
+}
+
+#links {
+    display: grid;
+}
+
+#top {
+    margin-bottom: 20px;
+}
+
+@keyframes color-change {
+    25% {color: blue; background-color: lightsalmon;}
+    50% {color: green; background-color: lightsalmon;}
+    75% {color: yellow; background-color: lightsalmon;}
+    100% {color: red; background-color: lightsalmon;}
+}
+
+@keyframes size-change {
+    from {font-size: 0px; background-color: lightsalmon;}
+    to {font-size: 100px; background-color: lightsalmon;}
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg); background-color: lightsalmon;}
+    to {transform:rotate(360deg); background-color: lightsalmon;}
+}
+
+#color-change:hover {
+    animation-name: color-change;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#size-change:hover {
+    animation-name: size-change;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#spin:hover {
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#color-change, #size-change, #spin {
+    border-radius: 35px;
+    background-color: skyblue;
+    color: darkorange;
+    font-weight: bold;
+}
+
+#spin {
+    width: 70px;
+}
+
+
+
+
+
+
+/* iPad width 768px */
+
+@media only screen and (min-width: 768px) {
+
+    #pizzavideo {
+    transform: skewY(20deg);
+    width: 95vw;
+    margin-top: 25px;
+    height: 600px;
+}
+
+#pizzachef {
+    width: 90vw;
+}
+
+img {
+    transform: rotate(5deg);
+}
+
+#pizzastore {
+    width: 90vw;
+    margin-left: 20px;
+}
+
+nav>a {
+    transform: rotate(5deg);
+}
+
+main h1 {
+    transform: rotate(5deg);
+    font-size: 100px;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+section {
+    background-color: white;
+
+    iframe {
+    width: 90vw;
+    margin-left: 15px;
+    transform: rotate(5deg);
+}
+
+}
+
+a:link {
+    font-size: 3rem;
+    background-color: green;
+    margin-right: 20px;
+}
+
+#about:visited {
+    font-size: 3rem;
+    color:brown;
+    background-color: skyblue;
+}
+
+#advan:active {
+    font-size: 3rem;
+    color: yellow;
+}
+
+#advan:hover {
+    color: red;
+}
+
+#links {
+    display: grid;
+}
+
+#top {
+    margin-bottom: 20px;
+}
+
+@keyframes color-change {
+    25% {color: blue; background-color: lightsalmon;}
+    50% {color: green; background-color: lightsalmon;}
+    75% {color: yellow; background-color: lightsalmon;}
+    100% {color: red; background-color: lightsalmon;}
+}
+
+@keyframes size-change {
+    from {font-size: 0px; background-color: lightsalmon;}
+    to {font-size: 100px; background-color: lightsalmon;}
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg); background-color: lightsalmon;}
+    to {transform:rotate(360deg); background-color: lightsalmon;}
+}
+
+#color-change:hover {
+    animation-name: color-change;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#size-change:hover {
+    animation-name: size-change;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#spin:hover {
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#color-change, #size-change, #spin {
+    border-radius: 35px;
+    background-color: skyblue;
+    color: darkorange;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#spin {
+    width: 150px;
+}
+
+}
+
+
+
+/* Desktop width 1024px */
+
+@media only screen and (min-width: 1024px) {
+
+    #pizzavideo {
+    transform: skewY(20deg);
+    width: 95vw;
+    margin-top: 110px;
+    height: 600px;
+    margin-right: 10px;
+}
+
+#pizzachef {
+    width: 90vw;
+}
+
+img {
+    transform: rotate(5deg);
+}
+
+#pizzastore {
+    width: 90vw;
+    margin-left: 40px;
+}
+
+nav>a {
+    transform: rotate(5deg);
+}
+
+main h1 {
+    transform: rotate(5deg);
+    font-size: 100px;
+}
+
+h3 {
+    font-size: 70px;
+}
+
+iframe {
+    width: 90vw;
+    margin-left: 15px;
+    transform: rotate(5deg);
+
+}
+
+a:link {
+    font-size: 3rem;
+    background-color: green;
+    margin-right: 20px;
+}
+
+#about:visited {
+    font-size: 3rem;
+    color:brown;
+    background-color: skyblue;
+}
+
+#advan:active {
+    font-size: 3rem;
+    color: yellow;
+}
+
+#advan:hover {
+    color: red;
+}
+
+#links {
+    display: grid;
+}
+
+#top {
+    margin-bottom: 20px;
+    font-size: px;
+}
+
+@keyframes color-change {
+    25% {color: blue; background-color: lightsalmon;}
+    50% {color: green; background-color: lightsalmon;}
+    75% {color: yellow; background-color: lightsalmon;}
+    100% {color: red; background-color: lightsalmon;}
+}
+
+@keyframes size-change {
+    from {font-size: 0px; background-color: lightsalmon;}
+    to {font-size: 100px; background-color: lightsalmon;}
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg); background-color: lightsalmon;}
+    to {transform:rotate(360deg); background-color: lightsalmon;}
+}
+
+#color-change:hover {
+    animation-name: color-change;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#size-change:hover {
+    animation-name: size-change;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#spin:hover {
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#color-change, #size-change, #spin {
+    border-radius: 35px;
+    background-color: skyblue;
+    color: darkorange;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+#spin {
+    width: 200px;
+}
+
+#pizzastore:active {
+    @include shrink();
+}
+
+}

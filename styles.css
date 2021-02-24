@@ -1,366 +1,575 @@
 /* iPhone 5 width 320px */
+body {
+  background-color: white;
+}
 
 #pizzavideo {
-    transform: skewY(20deg);
-    width: 95vw;
+  -webkit-transform: skewY(20deg);
+          transform: skewY(20deg);
+  width: 95vw;
 }
 
 #pizzachef {
-    width: 90vw;
+  width: 90vw;
 }
 
 img {
-    transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
 }
 
 #pizzastore {
-    width: 90vw;
-    margin-left: 10px;
+  width: 90vw;
+  margin-left: 10px;
 }
 
-nav>a {
-    transform: rotate(5deg);
+nav > a {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
 }
 
 main h1 {
-    transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
 }
 
-h3+iframe {
-    transform: rotate(5deg);
+h3 + iframe {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
 }
 
 a:link {
-    font-size: 3rem;
-    background-color: green;
+  font-size: 3rem;
+  background-color: green;
 }
 
 #about:visited {
-    font-size: 3rem;
-    color:brown;
-    background-color: white;
+  font-size: 3rem;
+  color: brown;
+  background-color: white;
 }
 
 #advan:active {
-    font-size: 3rem;
-    color: yellow;
+  font-size: 3rem;
+  color: yellow;
 }
 
 #advan:hover {
-    color: red;
+  color: red;
 }
 
 #links {
-    display: grid;
+  display: -ms-grid;
+  display: grid;
 }
 
 #top {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+@-webkit-keyframes color-change {
+  25% {
+    color: blue;
+    background-color: lightsalmon;
+  }
+  50% {
+    color: green;
+    background-color: lightsalmon;
+  }
+  75% {
+    color: yellow;
+    background-color: lightsalmon;
+  }
+  100% {
+    color: red;
+    background-color: lightsalmon;
+  }
 }
 
 @keyframes color-change {
-    25% {color: blue; background-color: lightsalmon;}
-    50% {color: green; background-color: lightsalmon;}
-    75% {color: yellow; background-color: lightsalmon;}
-    100% {color: red; background-color: lightsalmon;}
+  25% {
+    color: blue;
+    background-color: lightsalmon;
+  }
+  50% {
+    color: green;
+    background-color: lightsalmon;
+  }
+  75% {
+    color: yellow;
+    background-color: lightsalmon;
+  }
+  100% {
+    color: red;
+    background-color: lightsalmon;
+  }
+}
+
+@-webkit-keyframes size-change {
+  from {
+    font-size: 0px;
+    background-color: lightsalmon;
+  }
+  to {
+    font-size: 100px;
+    background-color: lightsalmon;
+  }
 }
 
 @keyframes size-change {
-    from {font-size: 0px; background-color: lightsalmon;}
-    to {font-size: 100px; background-color: lightsalmon;}
+  from {
+    font-size: 0px;
+    background-color: lightsalmon;
+  }
+  to {
+    font-size: 100px;
+    background-color: lightsalmon;
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    background-color: lightsalmon;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    background-color: lightsalmon;
+  }
 }
 
 @keyframes spin {
-    from {transform:rotate(0deg); background-color: lightsalmon;}
-    to {transform:rotate(360deg); background-color: lightsalmon;}
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    background-color: lightsalmon;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    background-color: lightsalmon;
+  }
 }
 
 #color-change:hover {
-    animation-name: color-change;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+  -webkit-animation-name: color-change;
+          animation-name: color-change;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 #size-change:hover {
-    animation-name: size-change;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+  -webkit-animation-name: size-change;
+          animation-name: size-change;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 #spin:hover {
-    animation-name: spin;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 #color-change, #size-change, #spin {
-    border-radius: 35px;
-    background-color: skyblue;
-    color: darkorange;
-    font-weight: bold;
+  border-radius: 35px;
+  background-color: skyblue;
+  color: darkorange;
+  font-weight: bold;
 }
 
 #spin {
-    width: 70px;
+  width: 70px;
 }
 
-
-
-
-
-
 /* iPad width 768px */
-
 @media only screen and (min-width: 768px) {
-
-    #pizzavideo {
-    transform: skewY(20deg);
+  #pizzavideo {
+    -webkit-transform: skewY(20deg);
+            transform: skewY(20deg);
     width: 95vw;
     margin-top: 25px;
     height: 600px;
-}
-
-#pizzachef {
+  }
+  #pizzachef {
     width: 90vw;
-}
-
-img {
-    transform: rotate(5deg);
-}
-
-#pizzastore {
+  }
+  img {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  #pizzastore {
     width: 90vw;
     margin-left: 20px;
-}
-
-nav>a {
-    transform: rotate(5deg);
-}
-
-main h1 {
-    transform: rotate(5deg);
+  }
+  nav > a {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  main h1 {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
     font-size: 100px;
-}
-
-h3 {
+  }
+  h3 {
     font-size: 50px;
-}
-
-iframe {
+  }
+  section {
+    background-color: white;
+  }
+  section iframe {
     width: 90vw;
     margin-left: 15px;
-    transform: rotate(5deg);
-}
-
-a:link {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  a:link {
     font-size: 3rem;
     background-color: green;
     margin-right: 20px;
-}
-
-#about:visited {
+  }
+  #about:visited {
     font-size: 3rem;
-    color:brown;
+    color: brown;
     background-color: skyblue;
-}
-
-#advan:active {
+  }
+  #advan:active {
     font-size: 3rem;
     color: yellow;
-}
-
-#advan:hover {
+  }
+  #advan:hover {
     color: red;
-}
-
-#links {
+  }
+  #links {
+    display: -ms-grid;
     display: grid;
-}
-
-#top {
+  }
+  #top {
     margin-bottom: 20px;
-}
-
-@keyframes color-change {
-    25% {color: blue; background-color: lightsalmon;}
-    50% {color: green; background-color: lightsalmon;}
-    75% {color: yellow; background-color: lightsalmon;}
-    100% {color: red; background-color: lightsalmon;}
-}
-
-@keyframes size-change {
-    from {font-size: 0px; background-color: lightsalmon;}
-    to {font-size: 100px; background-color: lightsalmon;}
-}
-
-@keyframes spin {
-    from {transform:rotate(0deg); background-color: lightsalmon;}
-    to {transform:rotate(360deg); background-color: lightsalmon;}
-}
-
-#color-change:hover {
-    animation-name: color-change;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-#size-change:hover {
-    animation-name: size-change;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-#spin:hover {
-    animation-name: spin;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-#color-change, #size-change, #spin {
+  }
+  @-webkit-keyframes color-change {
+    25% {
+      color: blue;
+      background-color: lightsalmon;
+    }
+    50% {
+      color: green;
+      background-color: lightsalmon;
+    }
+    75% {
+      color: yellow;
+      background-color: lightsalmon;
+    }
+    100% {
+      color: red;
+      background-color: lightsalmon;
+    }
+  }
+  @keyframes color-change {
+    25% {
+      color: blue;
+      background-color: lightsalmon;
+    }
+    50% {
+      color: green;
+      background-color: lightsalmon;
+    }
+    75% {
+      color: yellow;
+      background-color: lightsalmon;
+    }
+    100% {
+      color: red;
+      background-color: lightsalmon;
+    }
+  }
+  @-webkit-keyframes size-change {
+    from {
+      font-size: 0px;
+      background-color: lightsalmon;
+    }
+    to {
+      font-size: 100px;
+      background-color: lightsalmon;
+    }
+  }
+  @keyframes size-change {
+    from {
+      font-size: 0px;
+      background-color: lightsalmon;
+    }
+    to {
+      font-size: 100px;
+      background-color: lightsalmon;
+    }
+  }
+  @-webkit-keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      background-color: lightsalmon;
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+      background-color: lightsalmon;
+    }
+  }
+  @keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      background-color: lightsalmon;
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+      background-color: lightsalmon;
+    }
+  }
+  #color-change:hover {
+    -webkit-animation-name: color-change;
+            animation-name: color-change;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  #size-change:hover {
+    -webkit-animation-name: size-change;
+            animation-name: size-change;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  #spin:hover {
+    -webkit-animation-name: spin;
+            animation-name: spin;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  #color-change, #size-change, #spin {
     border-radius: 35px;
     background-color: skyblue;
     color: darkorange;
     font-weight: bold;
     font-size: 30px;
-}
-
-#spin {
+  }
+  #spin {
     width: 150px;
+  }
 }
-
-}
-
-
 
 /* Desktop width 1024px */
-
 @media only screen and (min-width: 1024px) {
-
-    #pizzavideo {
-    transform: skewY(20deg);
+  #pizzavideo {
+    -webkit-transform: skewY(20deg);
+            transform: skewY(20deg);
     width: 95vw;
     margin-top: 110px;
     height: 600px;
     margin-right: 10px;
-}
-
-#pizzachef {
+  }
+  #pizzachef {
     width: 90vw;
-}
-
-img {
-    transform: rotate(5deg);
-}
-
-#pizzastore {
+  }
+  img {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  #pizzastore {
     width: 90vw;
     margin-left: 40px;
-}
-
-nav>a {
-    transform: rotate(5deg);
-}
-
-main h1 {
-    transform: rotate(5deg);
+  }
+  nav > a {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  main h1 {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
     font-size: 100px;
-}
-
-h3 {
+  }
+  h3 {
     font-size: 70px;
-}
-
-iframe {
+  }
+  iframe {
     width: 90vw;
     margin-left: 15px;
-    transform: rotate(5deg);
-
-}
-
-a:link {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  a:link {
     font-size: 3rem;
     background-color: green;
     margin-right: 20px;
-}
-
-#about:visited {
+  }
+  #about:visited {
     font-size: 3rem;
-    color:brown;
+    color: brown;
     background-color: skyblue;
-}
-
-#advan:active {
+  }
+  #advan:active {
     font-size: 3rem;
     color: yellow;
-}
-
-#advan:hover {
+  }
+  #advan:hover {
     color: red;
-}
-
-#links {
+  }
+  #links {
+    display: -ms-grid;
     display: grid;
-}
-
-#top {
+  }
+  #top {
     margin-bottom: 20px;
     font-size: px;
-}
-
-@keyframes color-change {
-    25% {color: blue; background-color: lightsalmon;}
-    50% {color: green; background-color: lightsalmon;}
-    75% {color: yellow; background-color: lightsalmon;}
-    100% {color: red; background-color: lightsalmon;}
-}
-
-@keyframes size-change {
-    from {font-size: 0px; background-color: lightsalmon;}
-    to {font-size: 100px; background-color: lightsalmon;}
-}
-
-@keyframes spin {
-    from {transform:rotate(0deg); background-color: lightsalmon;}
-    to {transform:rotate(360deg); background-color: lightsalmon;}
-}
-
-#color-change:hover {
-    animation-name: color-change;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-#size-change:hover {
-    animation-name: size-change;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-#spin:hover {
-    animation-name: spin;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-#color-change, #size-change, #spin {
+  }
+  @-webkit-keyframes color-change {
+    25% {
+      color: blue;
+      background-color: lightsalmon;
+    }
+    50% {
+      color: green;
+      background-color: lightsalmon;
+    }
+    75% {
+      color: yellow;
+      background-color: lightsalmon;
+    }
+    100% {
+      color: red;
+      background-color: lightsalmon;
+    }
+  }
+  @keyframes color-change {
+    25% {
+      color: blue;
+      background-color: lightsalmon;
+    }
+    50% {
+      color: green;
+      background-color: lightsalmon;
+    }
+    75% {
+      color: yellow;
+      background-color: lightsalmon;
+    }
+    100% {
+      color: red;
+      background-color: lightsalmon;
+    }
+  }
+  @-webkit-keyframes size-change {
+    from {
+      font-size: 0px;
+      background-color: lightsalmon;
+    }
+    to {
+      font-size: 100px;
+      background-color: lightsalmon;
+    }
+  }
+  @keyframes size-change {
+    from {
+      font-size: 0px;
+      background-color: lightsalmon;
+    }
+    to {
+      font-size: 100px;
+      background-color: lightsalmon;
+    }
+  }
+  @-webkit-keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      background-color: lightsalmon;
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+      background-color: lightsalmon;
+    }
+  }
+  @keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      background-color: lightsalmon;
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+      background-color: lightsalmon;
+    }
+  }
+  #color-change:hover {
+    -webkit-animation-name: color-change;
+            animation-name: color-change;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  #size-change:hover {
+    -webkit-animation-name: size-change;
+            animation-name: size-change;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  #spin:hover {
+    -webkit-animation-name: spin;
+            animation-name: spin;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  #color-change, #size-change, #spin {
     border-radius: 35px;
     background-color: skyblue;
     color: darkorange;
     font-weight: bold;
     font-size: 45px;
-}
-
-#spin {
+  }
+  #spin {
     width: 200px;
+  }
+  #pizzastore:active {
+    width: 25vw;
+  }
 }
-
-}
+/*# sourceMappingURL=styles.css.map */
